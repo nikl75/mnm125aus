@@ -1,0 +1,69 @@
+body {
+  background-color: #000000;
+  color: #666;
+}
+.touch-size {
+  height: 768px;
+  width: 1366px;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+.mnm-row-cols-7 > * {
+  -ms-flex: 0 0 14.2857%;
+  flex: 0 0 14.2857%;
+  max-width: 14.2857%;
+  height: 128px;
+}
+
+.col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* background-color: #111; */
+}
+
+.col-inner {
+  /* background-color: #333; */
+  /* border: solid 1px #666; */
+  color: #c50000;
+}
+
+.refresher {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.mnm-page-nav {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 500;
+}
+.ms-i {
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+}
+
+.mnm-page-content {
+  margin-top: 3rem;
+}
+
+.mnm-btn-p01 {
+  background: no-repeat url(../img/DSC_0443.jpg) center/cover;
+}
+.mnm-btn-p02 {
+  background: no-repeat url(../img/DSC_0030.jpg) center/cover;
+}
+.mnm-btn-p03 {
+  background: no-repeat url(../img/DSC_0193.jpg) center/cover;
+}
+.mnm-btn-p04 {
+  background: no-repeat url(../img/DSC_0561.jpg) center/cover;
+}
+.mnm-btn-p05 {
+  background: no-repeat url(../img/DSC_0573.jpg) center/cover;
+}
+.mnm-btn-p06 {
+  background: no-repeat url(../img/IMG_0789.jpg) center/cover;
+}
