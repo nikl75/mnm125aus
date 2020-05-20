@@ -7,7 +7,7 @@ var gulp = require("gulp"),
   header = require("gulp-header"),
   replace = require("gulp-replace");
 
-var pkg = require("./package.json.js.js");
+var pkg = require("./package.json.js");
 var banner = [
   "// ==================================================",
   "// fancyBox v${pkg.version}",
