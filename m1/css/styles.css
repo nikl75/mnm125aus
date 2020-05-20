@@ -2,6 +2,9 @@ body {
   background-color: #000000;
   color: #666;
 }
+body.p1-gal{
+  background-color: #fff;
+}
 .hidden{
   display:none;
 }
@@ -11,7 +14,9 @@ body {
   overflow: scroll;
   background-color: #fff;
 }
-
+.touch-size-out{
+  background-color: #fff;
+}
 .mnm-row-cols-7 > * {
   -ms-flex: 0 0 14.2857%;
   flex: 0 0 14.2857%;
