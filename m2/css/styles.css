@@ -8,7 +8,13 @@ body {
   overflow: scroll;
   background-color: #fff;
 }
+.hidden{
+  display:none;
+}
 
+.row{
+  margin-bottom:3rem;
+}
 .mnm-row-cols-7 > * {
   -ms-flex: 0 0 14.2857%;
   flex: 0 0 14.2857%;
