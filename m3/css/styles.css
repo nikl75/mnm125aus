@@ -1,0 +1,403 @@
+/*---------------Schrifteinbindung-------------*/
+@font-face {
+  font-family: 'DINPro-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Regular'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Regular') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-RegularItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-RegularItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-RegularItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Medium'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Medium') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-MediumItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-MediumItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Light'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Light') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-LightItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-LightItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondRegular'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondRegular') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondMedium'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondMedium') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondLight'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondLight') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondBold'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondBold') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondBlack'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondBlack') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-BoldItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-BoldItalic') format('woff');
+  }
+ @font-face {
+  font-family: 'DINPro-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Bold'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Bold') format('woff');
+  } 
+@font-face {
+  font-family: 'DINPro-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Black'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Black') format('woff');
+  } 
+@font-face {
+  font-family: 'DINPro-BlackItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-BlackItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-BlackItalic') format('woff');
+  } 
+@font-face {
+    font-family: 'DINPro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Light'), url('DINPro-Light tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Medium'), url('DINPro-Medium tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Bold'), url('DINPro-Bold tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro-Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Black'), url('DINPro-Black tr.woff') format('woff');
+}
+
+
+/*---------------Schrifteinbindung-------------*/
+body {
+  background-color: #000000;
+  color: #666;
+  font-family: 'DINPro-Regular';
+}
+.touch-size {
+  height: 768px; /* vorher 1024px*/
+  width: 1366px; /* vorher 1280px*/
+  overflow: scroll;
+  background-color: #fff;
+}
+.hidden{
+  display:none;
+}
+
+
+.mnm-row-cols-3 > * {
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  height: 256px; /* vorher 341.33333px*/
+}
+
+.col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* background-color: #111; */
+}
+
+.col-inner {
+  /* background-color: #333; */
+  /* border: solid 1px #666; */
+  color: #c50000;
+
+}
+.kachel-head{
+font-family: 'DINPro-Black';
+font-size: 3rem;
+right: -26px;
+bottom: -18px;
+position: absolute;
+background: rgba(255,255,255,0.8);
+padding: 0 20px;
+}
+
+
+.refresher {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.mnm-page-nav {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 500;
+}
+.ms-i {
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+}
+
+.mnm-page-content {
+  margin-top: 3rem;
+}
+.inner-2sp {
+    height:400px;
+}
+.titelPage{
+  margin-bottom: 2rem;
+}
+.textPage{
+  color: #666;
+}
+
+
+.mnm-btn-Einleitung {
+  background: red;
+  background-size: auto 350px;
+  background-position: 50% 50%;
+}
+.mnm-btn-p01 {
+  background: no-repeat url(../img/01_Sammeln_ZKD.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 50% 70%;
+}
+.mnm-btn-p02 {
+  background: no-repeat url(../img/02_Bewahren_ZKD_ES3.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 30% 50%;
+}
+.mnm-btn-p03 {
+  background: no-repeat url(../img/03_Fotografieren_AK.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 30% 50%;
+}
+.mnm-btn-p04 {
+  background: no-repeat url(../img/04_MB_DigiOzeanien.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 45% 24%;
+}
+.mnm-btn-p05 {
+  background: no-repeat url(../img/05_Südsee.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 50% 20%;
+}
+.mnm-btn-p06 {
+  background: no-repeat url(../img/06_Vermittlung_AK.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 5% 20%;
+}
+.mnm-btn-p07 {
+  background: no-repeat url(../img/07_Pressekonferenz_OS-PR_016.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 50% 25%;  /*linke Zahl: links-rechts   rechte Zahl:  oben-unten  */
+}
+.mnm-btn-p08 {
+  background: no-repeat url(../img/08_Gruppenfoto\ LVT_Museumsvolontäre.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 48% 15%;
+}
+/*
+.mnm-btn-p09 {
+  background: no-repeat url(/m2/img/9.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 30% 55%;
+}
+.mnm-btn-p10 {
+  background: no-repeat url(/m2/img/10.jpg) center/cover;
+  background-size: auto 1000px;
+  background-position: 27% 28%;
+}
+.mnm-btn-p11 {
+  background: no-repeat url(/m2/img/11.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 20% 30%;
+}
+.mnm-btn-p12 {
+  background: no-repeat url(/m2/img/12-1.jpg) center/cover;
+  background-size: auto 600px;
+  background-position: 58% 10%;
+}
+.mnm-btn-p13 {
+  background: no-repeat url(/m2/img/13-2.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 60%;
+}
+.mnm-btn-p14 {
+  background: no-repeat url(/m2/img/14-3.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 85% 50%;
+}
+.mnm-btn-p15 {
+  background: no-repeat url(/m2/img/15-4.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 30%;
+}
+.mnm-btn-p16 {
+  background: no-repeat url(/m2/img/16-5.jpg) center/cover;
+  background-size: auto 1700px;
+  background-position: 50% 26%;
+}
+.mnm-btn-p17 {
+  background: no-repeat url(/m2/img/17-6.jpg) center/cover;
+  background-size: auto 300px;
+  background-position: 30% 85%;
+}
+.mnm-btn-p18 {
+  background: no-repeat url(/m2/img/18-12.jpg) center/cover;
+  background-size: auto 1100px;
+  background-position: 50% 30%;
+}
+
+.mnm-btn-p19 {
+  background: no-repeat url(/m2/img/19-7.jpg) center/cover;
+  background-size: auto 450px;
+  background-position: 50% 45%;
+}
+.mnm-btn-p20 {
+  background: no-repeat url(/m2/img/20-8.jpg) center/cover;
+  background-size: auto 500px;
+  background-position: 50% 80%;
+}
+.mnm-btn-p21 {
+  background: no-repeat url(/m2/img/21-9.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 45%;
+}
+.mnm-btn-p22 {
+  background: no-repeat url(/m2/img/22-16.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 30%;
+}
+.mnm-btn-p23 {
+  background: no-repeat url(/m2/img/23\ Insektenkasten.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 50%;
+}
+.mnm-btn-p24 {
+  background: no-repeat url(/m2/img/24-3-12.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 55% 8%;
+}
+.mnm-btn-p25 {
+  background: no-repeat url(/m2/img/25-11.jpg) center/cover;
+  background-size: auto 300px;
+  background-position: 20% 20%;
+}
+.mnm-btn-p27 {
+  background: no-repeat url(/m2/img/27-9.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 50%;
+}
+.mnm-btn-p28 {
+  background: no-repeat url(/m2/img/28-10.jpg) center/cover;
+  background-size: auto 500px;
+  background-position: 50% 30%;
+}
+.mnm-btn-p29 {
+  background: no-repeat url(/m2/img/29-8.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 55% 30%;
+}
+.mnm-btn-p30 {
+  background: no-repeat url(/m2/img/30-7.jpg) center/cover;
+  background-size: auto 350px;
+  background-position: 50% 45%;
+}
+.mnm-btn-p31 {
+  background: no-repeat url(/m2/img/31-1-6.jpg) center/cover;
+  background-size: auto 900px;
+  background-position: 50% 80%;
+}
+.mnm-btn-p32 {
+  background: no-repeat url(/m2/img/32-2.jpg) center/cover;
+  background-size: auto 600px;
+  background-position: 50% 40%;
+}
+.mnm-btn-p33 {
+  background: no-repeat url(/m2/img/33-1.jpg) center/cover;
+  background-size: auto 300px;
+  background-position: 50% 50%;
+}
+.mnm-btn-p35 {
+  background: no-repeat url(/m2/img/35-1.jpg) center/cover;
+  background-size: auto 700px;
+  background-position: 50% 8%;
+}
+.mnm-btn-p36 {
+  background: no-repeat url(/m2/img/36-3.jpg) center/cover;
+  background-size: auto 600px;
+  background-position: 85% 23%;
+}
+.mnm-btn-p37 {
+  background: no-repeat url(/m2/img/37-4.jpg) center/cover;
+  background-size: auto 800px;
+  background-position: 75% 8%;
+}
+.mnm-btn-p38 {
+  background: no-repeat url(/m2/img/38-5.jpg) center/cover;
+  background-size: auto 600px;
+  background-position: 50% 55%;
+}
+.mnm-btn-p39 {
+  background: no-repeat url( /m2/img/39\ Silberbäumchen.jpg) center/cover;
+  background-size: auto 500px;
+  background-position: 50% 70%;
+}
+.mnm-btn-p40 {
+  background: no-repeat url(/m2/img/40-7.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 50%;
+}
+.mnm-btn-p41 {
+  background: no-repeat url(/m2/img/41-9.jpg) center/cover;
+  background-size: auto 400px;
+  background-position: 50% 40%;
+}
+.mnm-btn-p42 {
+  background: no-repeat url(/m2/img/42-10.jpg) center/cover;
+  background-size: auto 500px;
+  background-position: 70% 60%;
+}
+*/

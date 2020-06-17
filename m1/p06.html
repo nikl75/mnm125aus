@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Wiedereröffnung des Museums für Natur- und Völkerkunde in der Turnseeschule</title>
+  <meta charset="utf-8" />
+  <script src="framework/jquery/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="framework/bootstrap/css/bootstrap.min.css">
+  <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="framework/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+ 
+
+
+</head>
+
+<body class="p1-gal">
+  <div class="touch-size-out">
+    <nav class="mnm-page-nav hidden">
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">ZURÜCK</a>
+    </nav>
+
+    <div class="container mnm-page-content">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-inner row row-cols-2 mas-container">
+            <a data-fancybox="gallery" class="col mas-item mas-item-sizer" href="img/06_Grundriss der Turnseeschule von 1904_SAF.jpg"
+            data-caption="Grundriss der Turnseeschule von 1904, Foto: StadtAF D.Sm. 6/2.">
+              <img class="img-fluid" src="img/06_Grundriss der Turnseeschule von 1904_SAF.jpg">
+            </a>
+            
+            <a data-fancybox="gallery" class="col mas-item" href="img/06_01_BreisgZeit1903.JPG"
+            data-caption="Breisgauer Zeitung vom 23.10.1903, Foto: StadtAF C3/241/2.">
+              <img class="img-fluid" src="img/06_01_BreisgZeit1903.JPG">
+            </a>
+           
+            <a data-fancybox="gallery" class="col mas-item" href="img/06_02_BreisgZeit1903.JPG"
+            data-caption="Breisgauer Zeitung vom 23.10.1903, Foto: StadtAF C3/241/2.">
+              <img class="img-fluid" src="img/06_02_BreisgZeit1903.JPG">
+            </a>
+            <a data-fancybox="gallery" class="col mas-item" href="img/06_Beschluss Stadtrat zur Nutzung Turnseeschule 1903.JPG"
+            data-caption="Beschluss des Stadtrates 07.10.1903, Foto: StadtAF D.m. 32/1b.">
+              <img class="img-fluid" src="img/06_Beschluss Stadtrat zur Nutzung Turnseeschule 1903.JPG">
+            </a>
+             <!-- weitere Bilder
+            <a data-fancybox="gallery" class="col mas-item" href="img/DSC_0632.jpg">
+              <img class="img-fluid" src="img/DSC_0632.jpg">
+            </a>
+            <a data-fancybox="gallery" class="col mas-item" href="img/IMG_2467.jpg">
+              <img class="img-fluid" src="img/IMG_2467.jpg">
+            </a>
+            -->
+          </div>
+
+
+        </div>
+        <div class="col-md-5">
+          <div class="col-inner">
+            <div class="datumPage">02.04.1903</div>
+            <div class="ueberschriftPage">Wiedereröffnung des Museums für Natur- und Völkerkunde in der Turnseeschule</div>
+            <div class="textAbschnitt">
+            <p>Da die Sammlungsbestände rasch anwachsen, hat das Museum mit zunehmender Raumknappheit zu kämpfen. 
+              Auf Beschluss des Stadtrats, werden dem Museum neue Räumlichkeiten in der Turnseeschule, Turnseestraße 14, 
+              Ecke Talstraße, zu Verfügung gestellt. Nach seinem Umzug eröffnet das Museum am 2. April 1903. Die Sammlungen 
+              werden nun in der ehemaligen Turnhalle sowie in zwei Klassenräumen präsentiert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="framework/masonry/imagesloaded.pkgd.min.js"></script>
+  <script src="framework/masonry/masonry.pkgd.min.js"></script>
+  <script src="framework/masonry/mnm-masonry-trigger.js"></script>
+
+  <script src="framework/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="js/ltg-call-fancybox.js"></script>
+
+
+  <script>
+    (function() {
+    
+        const idleDurationSecs = 600;    // X number of seconds
+        const redirectUrl = 'index.html';  // Redirect idle users to this URL
+        let idleTimeout; // variable to hold the timeout, do not modify
+    
+        const resetIdleTimeout = function() {
+    
+            // Clears the existing timeout
+            if(idleTimeout) clearTimeout(idleTimeout);
+    
+            // Set a new idle timeout to load the redirectUrl after idleDurationSecs
+            idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+        };
+    
+        // Init on page load
+        resetIdleTimeout();
+    
+        // Reset the idle timeout on any of the events listed below
+        ['click', 'touchstart', 'mousemove', 'scroll', 'wheel'].forEach(evt => 
+            document.addEventListener(evt, resetIdleTimeout, false)
+        );
+    
+    })();
+    </script>
+</body>
+
+</html>

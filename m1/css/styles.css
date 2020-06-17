@@ -1,6 +1,127 @@
+
+/*---------------Schrifteinbindung-------------*/
+@font-face {
+  font-family: 'DINPro-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Regular'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Regular') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-RegularItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-RegularItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-RegularItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Medium'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Medium') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-MediumItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-MediumItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Light'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Light') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-LightItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-LightItalic') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondRegular'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondRegular') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondMedium'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondMedium') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondLight'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondLight') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondBold'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondBold') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-CondBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-CondBlack'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-CondBlack') format('woff');
+  }
+@font-face {
+  font-family: 'DINPro-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-BoldItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-BoldItalic') format('woff');
+  }
+ @font-face {
+  font-family: 'DINPro-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Bold'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Bold') format('woff');
+  } 
+@font-face {
+  font-family: 'DINPro-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-Black'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-Black') format('woff');
+  } 
+@font-face {
+  font-family: 'DINPro-BlackItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro-BlackItalic'), url('../font/FF\ DIN\ Pro\ OT\ Co/DINPro-BlackItalic') format('woff');
+  } 
+@font-face {
+    font-family: 'DINPro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Light'), url('DINPro-Light tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Medium'), url('DINPro-Medium tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Bold'), url('DINPro-Bold tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro-Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Black'), url('DINPro-Black tr.woff') format('woff');
+}
+
+
+/*---------------Schrifteinbindung-------------*/
+
 body {
   background-color: #000000;
   color: #666;
+  font-family: 'DINPro-Regular';
 }
 body.p1-gal{
   background-color: #fff;
@@ -12,7 +133,7 @@ body.p1-gal{
   height: 768px;
   width: 1366px;
   overflow: scroll;
-  background-color: #fff;
+  background-color: #eee; /* dominik 200605 */
 }
 .touch-size-out{
   background-color: #fff;
@@ -45,18 +166,54 @@ body.p1-gal{
   min-width: 200px;
   /* height: 800px; */
   font-size: 1.5rem;
-  height: 760px;
+  height: 720px; /*davor 760px, aber dann war ein runter-scroll-Balken zu sehen*/
+   /*-----rein gemacht--*/
+   
 }
 .mnm-horizontal-col .col-inner {
   /* background-color: #333; */
   /* border: solid 1px #666; */
-  height: 200px;
+  /* height: 360px; *//* dominik 200605 */
   color: #c50000;
-  border-bottom: #c50000 3px solid;
   border-left: #c50000 1px dotted;
-  margin-top: 300px;
+  /*margin-top geändert, davor 300px;*/
+  margin-top: 220px;
   padding-left: 10px;
+  width: 400px;
+
+  /* neuer vorschlag dominik 200605 */
+    border-top: #c50000 3px solid;
+    margin-top: 120px;
+    padding-left: 10px;
+    width: 450px;
+    padding-right: 50px;
+    padding-top: 10px;
+
 }
+
+/* dominik 200605 */
+.mnm-horizontal-col .col-inner .ueberschrift{
+  color: #666;
+  font-size: 1.2rem;
+}
+.datumPage{
+  font-size: 1rem;
+  color: #c50000;
+  margin-bottom: 0.3rem;
+}
+.ueberschriftPage{
+  font-size: 1.5rem;
+  color: #c50000;
+  margin-bottom: 2rem;
+}
+
+.vorschauPic{
+  margin-top: 2rem;
+}
+.vorschau{
+  width: 300px;
+}
+
 
 .refresher {
   position: absolute;
@@ -82,3 +239,28 @@ body.p1-gal{
 .inner-2sp {
     height:400px;
 }
+
+
+.ueTimeline{
+  color:black;
+  
+}
+
+/* verschachtelte fancybox hintergrund */
+.p1-gal .fancybox-bg{
+  background: #eeeeee!important;
+  opacity: 0.8;
+ }
+
+.fancybox-caption{
+   color:#666!important;
+   background: none!important;
+ }
+
+ .unterueberschrift{
+   font-size: 1.2em;
+ }
+
+ .impressum{
+  font-size: 0.8em;
+ }

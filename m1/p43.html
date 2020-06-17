@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Dr. Tilmann von Stockhausen wird Direktor der Städtischen Museen Freiburg</title>
+  <meta charset="utf-8" />
+  <script src="framework/jquery/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="framework/bootstrap/css/bootstrap.min.css">
+  <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="framework/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+
+
+</head>
+
+<body class="p1-gal">
+  <div class="touch-size-out">
+    <nav class="mnm-page-nav hidden">
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">ZURÜCK</a>
+    </nav>
+
+    <div class="container mnm-page-content">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-inner row row-cols-2 mas-container">
+             
+            <a data-fancybox="gallery" class="col mas-item mas-item-sizer" href="img/Tilmann von Stockhausen_Foto_Rita Eggstein_2017_1.jpg"
+            data-caption="Dr. Tilmann von Stockhausen, Foto: Rita Eggstein, 2017.">
+              <img class="img-fluid" src="img/Tilmann von Stockhausen_Foto_Rita Eggstein_2017_1.jpg">
+            </a>
+             <!-- weitere Bilder
+            <a data-fancybox="gallery" class="col mas-item" href="/m1/img/42_MdH_Demonstration07.JPG">
+              <img class="img-fluid" src="/m1/img/42_MdH_Demonstration07.JPG">
+            </a>
+            
+            <a data-fancybox="gallery" class="col mas-item" href="/m1/img/08b_03_FreiTagblatt.JPG">
+              <img class="img-fluid" src="/m1/img/08b_03_FreiTagblatt.JPG">
+            </a>
+            
+            <a data-fancybox="gallery" class="col mas-item" href="/m1/img//08b_04_FreiTagblatt.JPG">
+              <img class="img-fluid" src="/m1/img//08b_04_FreiTagblatt.JPG">
+            </a>
+             
+            <a data-fancybox="gallery" class="col mas-item" href="/m1/img/08b_Ägypten_Egge_01.jpg">
+              <img class="img-fluid" src="/m1/img/08b_Ägypten_Egge_01.jpg">
+            </a>
+           
+            <a data-fancybox="gallery" class="col mas-item" href="/m1/img/08b_Chinesisches_Wohnzimmer01_Roebcke 1911.jpg">
+              <img class="img-fluid" src="/m1/img/08b_Chinesisches_Wohnzimmer01_Roebcke 1911.jpg">
+            </a>
+            
+            -->
+          </div>
+        </div>
+        
+        <div class="col-md-5">
+          <div class="col-inner">
+            <div class="datumPage">Februar 2008</div>
+            <div class="ueberschriftPage">Dr. Tilmann von Stockhausen wird Direktor der Städtischen Museen Freiburg</div>
+            <div class="textAbschnitt">
+            <p>Dr. Tilmann von Stockhausen wird als Leitender Direktor der Städtischen Museen Freiburg und als Direktor des Augustinermuseums eingesetzt. 
+              Der promovierte Kunsthistoriker arbeitete er in leitender Position in den Bereichen Marketing und Öffentlichkeitsarbeit bei den Staatlichen Kunstsammlungen Dresden und der Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg bis er 2008 nach Freiburg kam.
+              
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="framework/masonry/imagesloaded.pkgd.min.js"></script>
+  <script src="framework/masonry/masonry.pkgd.min.js"></script>
+  <script src="framework/masonry/mnm-masonry-trigger.js"></script>
+
+  <script src="framework/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="js/ltg-call-fancybox.js"></script>
+
+
+  <script>
+    (function() {
+    
+        const idleDurationSecs = 600;    // X number of seconds
+        const redirectUrl = 'index.html';  // Redirect idle users to this URL
+        let idleTimeout; // variable to hold the timeout, do not modify
+    
+        const resetIdleTimeout = function() {
+    
+            // Clears the existing timeout
+            if(idleTimeout) clearTimeout(idleTimeout);
+    
+            // Set a new idle timeout to load the redirectUrl after idleDurationSecs
+            idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+        };
+    
+        // Init on page load
+        resetIdleTimeout();
+    
+        // Reset the idle timeout on any of the events listed below
+        ['click', 'touchstart', 'mousemove', 'scroll', 'wheel'].forEach(evt => 
+            document.addEventListener(evt, resetIdleTimeout, false)
+        );
+    
+    })();
+    </script>
+</body>
+
+</html>
