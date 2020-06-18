@@ -122,8 +122,8 @@
     font-family: 'DINPro-Regular';
   }
   .touch-size {
-    height: 768px; /* vorher 1024px*/
-    width: 1366px; /* vorher 1280px*/
+    height: 1024px;
+    width: 1280px;
     overflow: hidden;
     background-color: #fff;
   }
@@ -136,7 +136,7 @@
     -ms-flex: 0 0 33.333%;
     flex: 0 0 33.333%;
     max-width: 33.333%;
-    height: 256px; /* vorher 341.33333px*/
+    height: 341.33333px;
   }
   
   .col {
