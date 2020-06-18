@@ -40,7 +40,7 @@ body.p1-gal{
 .touch-size {
   height: 768px;
   width: 1366px;
-  overflow: scroll;
+  overflow: hidden;
   background-color: #eee; /* dominik 200605 */
 }
 .touch-size-out{

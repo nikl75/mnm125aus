@@ -151,7 +151,7 @@ body {
   background-position: 50% 25%; /*linke Zahl: links-rechts   rechte Zahl:  oben-unten  */
 }
 .mnm-btn-p08 {
-  background: no-repeat url(../img/08_Gruppenfoto\LVT_Museumsvolontaere.jpg) center/cover;
+  background: no-repeat url(../img/08_Gruppenfoto\ LVT_Museumsvolontaere.jpg) center/cover;
   background-size: auto 350px;
   background-position: 50% 30%;
 }
